@@ -1,25 +1,20 @@
 # Restaurant order
 
-[![Build Status](https://travis-ci.org/micro-frontends-demo/restaurant-order.svg?branch=master)](https://travis-ci.org/micro-frontends-demo/restaurant-order)
+# GitHub
+1. Set up public GitHub repo
+2. Set up local git repo with the website files
+3. Link local git repo to remote GitHub repo
+4. Push first version of website files to GitHub repo
 
-A micro frontend for ordering food from a restaurant
+# Travis CI
+1. Change configuration to let GitHub repo push changes to Travis CI
 
-# Getting started
+# Website files changes
+1. Make the following adjustments:
+    - in /browselab/.env change the name of the subdomain
+    - in /browselab/.travis.yml change the name of the subdomain
 
-1. Clone the repo
-2. `yarn install`
-3. `yarn start`
-
-You'll also need to run the [`content`](https://github.com/micro-frontends-demo/content) server.
-Open the app at `/restaurant/2` to see restaurant number 2, for example.
-
-This will run the app on its own, outside of the container. This is useful while
-you're tweaking logic and styling, but you'll usually then need to integrate and
-test it with the rest of the application. So you should also run:
-
-- the [`container`](https://github.com/micro-frontends-demo/container/) application
-- the [`browse`](https://github.com/micro-frontends-demo/browse) micro frontend
-
-# Run the tests
-
-- `yarn test`
+# Build and deployment
+1. Push changes to GitHub
+2. The changes will be forwarded to Travis CI
+3. Based on the .travis.yml file Travis CI will build the software and deploy it to AWS

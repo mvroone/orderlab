@@ -95,7 +95,7 @@ class RestaurantDetails extends React.Component {
   };
 
   submitOrder = () => {
-    fetch('http://3.121.209.225:8080/ticket', { method: 'PUT' })
+    fetch('https://3.121.209.225:8080/ticket', { method: 'PUT' })
     .then(response => alert(response.status))
   };
 

@@ -98,7 +98,7 @@ class RestaurantDetails extends React.Component {
     alert(
       `Thank you for your order of the following delicious JSON:\n
   ${JSON.stringify(this.state.quantities)}\n
-(This is the end of the demo)`,
+(This is not the end of the demo)`,
     );
     fetch('http://3.121.209.225:8080/ticket', { method: 'PUT' })
     .then(data => data.json()) // Parsing the data into a JavaScript object

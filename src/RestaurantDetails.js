@@ -95,8 +95,11 @@ class RestaurantDetails extends React.Component {
   };
 
   submitOrder = () => {
-    fetch('https://3.121.209.225:8080/ticket', { method: 'PUT' })
-    .then(response => alert(response.status))
+    alert(
+      `Thank you for your order of the following delicious JSON:\n
+  ${JSON.stringify(this.state.quantities)}\n
+(This is the end of the demo)`,
+    );
   };
 
   render() {

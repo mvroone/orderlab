@@ -95,11 +95,6 @@ class RestaurantDetails extends React.Component {
   };
 
   submitOrder = () => {
-    alert(
-      `Thank you for your order of the following delicious JSON:\n
-  ${JSON.stringify(this.state.quantities)}\n
-(This is not the end of the demo)`,
-    );
     fetch('http://3.121.209.225:8080/ticket', { method: 'PUT' })
     .then(data => data.json()) // Parsing the data into a JavaScript object
     .then(json => alert(JSON.stringify(json))) // Displaying the stringified data in an alert popup

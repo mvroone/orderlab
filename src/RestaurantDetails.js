@@ -66,7 +66,8 @@ const OrderButton = styled.button`
   margin-top: 15px;
   align-self: flex-end;
   border: none;
-  background-color: #e79652;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 25px;
 `;
 
